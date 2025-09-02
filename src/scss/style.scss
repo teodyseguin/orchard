@@ -1,0 +1,10 @@
+@use 'base/headings';
+@use 'base/body';
+@use 'layout/layout';
+@use 'utilities/flexbox';
+@use 'components/ds';
+
+.main {
+  width: 1440px;
+  margin: 0 auto;
+}

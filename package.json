@@ -1,0 +1,22 @@
+{
+  "name": "orchard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "./node_modules/.bin/sass src/scss:assets/css --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "handlebars-loader": "^1.7.3",
+    "sass": "^1.91.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

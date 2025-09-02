@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blank Page</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="row">
+      <div class="col col--left">
+
+        <div id="ds-container" class="ds ds--v1"></div>
+
+        <script id="ds--v1" type="text/x-handlebars-template">
+          <div class="col col--left">
+            <img src="{{ leftImage }}" alt="">
+          </div>
+          <div class="col col--right">
+            <div class="col--right__top">
+              <img src="{{ rightTopImage }}" alt="">
+            </div>
+            <div class="col--right__bottom">
+              <img src="{{ rightBottomImage }}" alt="">
+            </div>
+          </div>
+        </script>
+
+      </div>
+
+      <div id="tb-container" class="col col--right"></div>
+
+      <script id="tb" type="text/x-handlebars-template">
+        <div class="col col--right">
+          <h2>{{ title }}</h2>
+          <p>{{ content }}</p>
+          <div>{{ captionTitle }}</div>
+          <div>{{ captionContent }}</div>
+        </div>
+      </script>
+    </div>
+
+    <div class="row">
+      
+    </div>
+  </div>
+  <script type="module" src="./assets/js/bundle.js"></script>
+</body>
+</html>
