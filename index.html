@@ -3,27 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blank Page</title>
+  <title>Tasteology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta name="description" content="Tasteology – Explore a world of flavors, colors, and culinary creativity. Discover recipes, ingredients, and the art of taste.">
+  <meta name="keywords" content="Tasteology, food, flavors, recipes, culinary, cooking, gastronomy, taste">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <meta property="og:title" content="Tasteology – Explore the Art of Taste">
+  <meta property="og:description" content="Dive into Tasteology, where flavors, colors, and culinary creativity come alive. Discover new recipes, ingredients, and the secrets of taste.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teodyseguin.github.io/orchard">
 </head>
 <body>
-  <div class="main">
-    <div class="row row--first">
+  <main class="main">
+    <section class="row row--first">
       <div class="col col--70 col--left">
 
         <div id="ds-container" class="ds ds--v1"></div>
 
         <script id="ds--v1" type="text/x-handlebars-template">
           <div class="col col--left">
-            <img src="{{ leftImage }}" alt="">
+            <img src="{{ leftImage.path }}" alt="{{ leftImage.field_alt }}">
           </div>
           <div class="col col--right">
             <div class="col--right__top">
-              <img src="{{ rightTopImage }}" alt="">
+              <img src="{{ rightTopImage.path }}" alt="{{ rightTopImage.field_alt }}">
             </div>
             <div class="col--right__bottom">
-              <img src="{{ rightBottomImage }}" alt="">
+              <img src="{{ rightBottomImage.path }}" alt="{{ rightBottomImage.field_alt }}">
             </div>
           </div>
         </script>
@@ -41,9 +52,9 @@
         </div>
       </script>
 
-    </div>
+    </section>
 
-    <div class="row">
+    <section class="row">
       <div id="cards-container" class="cards"></div>
   
       <script id="cards" type="text/x-handlebars-template">
@@ -55,16 +66,16 @@
         <div class="items">
           {{#each items}}
             <div class="card">
-              <img src="{{ field_card_image }}" alt="{{ field_card_name }}">
+              <img src="{{ field_card_image }}" alt="{{ field_alt }}">
               <h3 class="card__name">{{ field_card_name }}</h3>
               <p class="card__content">{{ field_card_content }}</p>
             </div>
           {{/each}}
         </div>
       </script>
-    </div>
+    </section>
 
-  </div>
+  </main>
 
   <script type="module" src="./assets/js/bundle.js"></script>
 </body>

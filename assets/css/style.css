@@ -93,6 +93,7 @@ body {
 .title {
   text-align: center;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .items {
@@ -114,6 +115,8 @@ body {
   text-align: center;
 }
 .items .card__content {
+  width: 100%;
+  margin: 0 auto;
   color: white;
   height: 90px;
   align-self: stretch;
@@ -126,13 +129,18 @@ body {
   letter-spacing: normal;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .items .card__content {
+    width: 315px;
+  }
+}
 .items img {
   width: 100%;
 }
 
 .tb__title {
   color: white;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 .tb__content {
   color: white;
@@ -157,6 +165,7 @@ body {
   letter-spacing: normal;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .tb__caption-content {
   color: white;
@@ -176,7 +185,7 @@ body {
 }
 @media (min-width: 768px) {
   .main {
-    width: 1440px;
+    width: 1400px;
   }
 }
 

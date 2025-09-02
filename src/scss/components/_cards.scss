@@ -9,6 +9,7 @@
 .title {
   text-align: center;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .items {
@@ -30,6 +31,8 @@
     }
 
     &__content {
+      width: 100%;
+      margin: 0 auto;
       color: white;
       height: 90px;
       align-self: stretch;
@@ -41,6 +44,10 @@
       line-height: 1.43;
       letter-spacing: normal;
       text-align: center;
+
+      @media (min-width: 768px) {
+        width: 315px;
+      }
     }
   }
 

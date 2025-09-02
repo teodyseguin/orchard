@@ -6,9 +6,18 @@ function fetchComponentData() {
   return {
     ds: {
       field_images: [
-        'assets/images/dynamic_stack/variant_1/left.webp',
-        'assets/images/dynamic_stack/variant_1/right-top.webp',
-        'assets/images/dynamic_stack/variant_1/right-bottom.webp'
+        {
+          path: 'assets/images/dynamic_stack/variant_1/left.webp',
+          field_alt: 'Boiling in a pot on a wood stove'
+        },
+        {
+          path: 'assets/images/dynamic_stack/variant_1/right-top.webp',
+          field_alt: 'A man arranging the ingredients'
+        },
+        {
+          path: 'assets/images/dynamic_stack/variant_1/right-bottom.webp',
+          field_alt: 'Different boiled eggs outcome'
+        }
       ]
     },
     tb: {
@@ -22,16 +31,19 @@ function fetchComponentData() {
       items: [
         {
           field_card_image: 'assets/images/cards/red.webp',
+          field_alt: 'A spoon with red mixture',
           field_card_name: 'Red',
           field_card_content: 'Red foods remind us of berries and soft fruits, so we anticipate a sweet taste.'
         },
         {
           field_card_image: 'assets/images/cards/green.webp',
+          field_alt: 'A sppon of green mixture',
           field_card_name: 'Green',
           field_card_content: 'Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours'
         },
         {
           field_card_image: 'assets/images/cards/white.webp',
+          field_alt: 'A sppon of white mixture',
           field_card_name: 'White',
           field_card_content: 'White foods evoke memories of salt and salty flavours, driving the expectation of a savoury treat.'
         }
@@ -43,9 +55,15 @@ function fetchComponentData() {
 function renderDsData() {
   const data = fetchComponentData();
   return {
-    leftImage: data.ds.field_images[0],
-    rightTopImage: data.ds.field_images[1],
-    rightBottomImage: data.ds.field_images[2]
+    leftImage: {
+      ...data.ds.field_images[0]
+    },
+    rightTopImage: { 
+      ...data.ds.field_images[1] 
+    },
+    rightBottomImage: { 
+      ...data.ds.field_images[2] 
+    }
   };
 }
 
