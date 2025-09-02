@@ -1,0 +1,7 @@
+@use '../abstracts/breakpoints';
+
+@mixin breakpoint-md {
+  @media (min-width: breakpoints.$md) {
+    @content;
+  }
+}
