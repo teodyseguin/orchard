@@ -21,7 +21,7 @@ function fetchComponentData() {
       ]
     },
     tb: {
-      field_title: "What does cooking mean",
+      field_title: "What does cooking mean?",
       field_content: "Is it simply applying heat to a food product? A way of making certain food safe to eat? Or a way to create flavour and make food more appealing? This is just part of what Hervé This, the father of molecular gastronomy, has dedicated his life to finding out. We spoke to him to find out what his experiments have told him. And in the process even discovered the secret to cooking the perfect egg...",
       field_caption_title: "The perfect egg",
       field_caption_content: "Keep water between 67 and 68°C for a flavourful, tender yolk"

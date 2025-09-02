@@ -1,5 +1,7 @@
+@use '../abstracts/colors';
+
 h2 {
-  color: white;
+  color: colors.$white;
   flex-grow: 1;
   font-size: 30px;
   font-weight: 300;
@@ -10,5 +12,5 @@ h2 {
   text-align: left;
   text-transform: uppercase;
   padding-bottom: 30px;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px colors.$white;
 }

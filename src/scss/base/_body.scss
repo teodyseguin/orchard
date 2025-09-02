@@ -1,4 +1,7 @@
+@use '../abstracts/fonts';
+@use '../abstracts/colors';
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #0e1414;
+  font-family: fonts.$primary-font;
+  background-color: colors.$site-bg;
 }

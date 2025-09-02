@@ -1,3 +1,10 @@
+/**
+ * Component: Cards Block.
+ */
+
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
 .header {
   text-align: center;
 }
@@ -7,6 +14,8 @@
 }
 
 .title {
+  color: colors.$white;
+  text-transform: uppercase;
   text-align: center;
   font-size: 30px;
   margin-bottom: 30px;
@@ -17,7 +26,7 @@
   flex-direction: column;
   gap: 10px;
 
-  @media (min-width: 768px) {
+  @include mixins.breakpoint-md {
     flex-direction: row;
   }
 
@@ -25,7 +34,7 @@
     flex: 1;
 
     &__name {
-      color: white;
+      color: colors.$white;
       text-transform: uppercase;
       text-align: center;
     }
@@ -33,7 +42,7 @@
     &__content {
       width: 100%;
       margin: 0 auto;
-      color: white;
+      color: colors.$white;
       height: 90px;
       align-self: stretch;
       flex-grow: 0;
@@ -45,7 +54,7 @@
       letter-spacing: normal;
       text-align: center;
 
-      @media (min-width: 768px) {
+      @include mixins.breakpoint-md {
         width: 315px;
       }
     }
