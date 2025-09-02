@@ -27,14 +27,14 @@
 
         <script id="ds--v1" type="text/x-handlebars-template">
           <div class="col col--left">
-            <img src="{{ leftImage.path }}" alt="{{ leftImage.field_alt }}">
+            <img src="{{ leftImage.path }}" alt="{{ leftImage.field_alt }}" class="img-float">
           </div>
           <div class="col col--right">
             <div class="col--right__top">
-              <img src="{{ rightTopImage.path }}" alt="{{ rightTopImage.field_alt }}">
+              <img src="{{ rightTopImage.path }}" alt="{{ rightTopImage.field_alt }}" class="img-float">
             </div>
             <div class="col--right__bottom">
-              <img src="{{ rightBottomImage.path }}" alt="{{ rightBottomImage.field_alt }}">
+              <img src="{{ rightBottomImage.path }}" alt="{{ rightBottomImage.field_alt }}" class="img-float">
             </div>
           </div>
         </script>
@@ -66,7 +66,7 @@
         <div class="items">
           {{#each items}}
             <div class="card">
-              <img src="{{ field_card_image }}" alt="{{ field_alt }}">
+              <img src="{{ field_card_image }}" alt="{{ field_alt }}" class="img-animate">
               <h3 class="card__name">{{ field_card_name }}</h3>
               <p class="card__content">{{ field_card_content }}</p>
             </div>
