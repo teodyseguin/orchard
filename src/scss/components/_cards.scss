@@ -1,0 +1,48 @@
+.title {
+  color: white;
+  flex-grow: 0;
+  font-family: OpenSans;
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .card {
+    flex: 1;
+
+    &__name {
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &__content {
+      color: white;
+      height: 90px;
+      align-self: stretch;
+      flex-grow: 0;
+      font-family: OpenSans;
+      font-size: 21px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

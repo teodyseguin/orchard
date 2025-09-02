@@ -1,0 +1,60 @@
+.tb {
+  &__title {
+    color: white;
+    margin: 0;
+    flex-grow: 1;
+    font-family: OpenSans;
+    font-size: 30px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    color: white;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: OpenSans;
+    font-size: 21px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+  }
+
+  &__caption {
+    color: #cf1430;
+    flex-grow: 0;
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__caption-content {
+    color: white;
+    width: 362px;
+    height: 60px;
+    flex-grow: 0;
+    font-family: OpenSans;
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+  }
+}
+
