@@ -3,6 +3,8 @@
 @use 'layout/layout';
 @use 'utilities/flexbox';
 @use 'components/ds';
+@use 'components/cards';
+@use 'components/tb';
 
 .main {
   width: 1440px;

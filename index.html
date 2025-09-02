@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="main">
-    <div class="row">
+    <div class="row" style="flex-direction: row; gap: 30px;">
       <div class="col col--left">
 
         <div id="ds-container" class="ds ds--v1"></div>
@@ -32,19 +32,35 @@
       <div id="tb-container" class="col col--right"></div>
 
       <script id="tb" type="text/x-handlebars-template">
-        <div class="col col--right">
-          <h2>{{ title }}</h2>
-          <p>{{ content }}</p>
-          <div>{{ captionTitle }}</div>
-          <div>{{ captionContent }}</div>
+        <div class="tb col col--right">
+          <h2 class="tb__title">{{ field_title }}</h2>
+          <p class="tb__content">{{ field_content }}</p>
+          <div class="tb__caption">{{ field_caption_title }}</div>
+          <div class="tb__caption-content">{{ field_caption_content }}</div>
+        </div>
+      </script>
+
+    </div>
+
+    <div class="row">
+      <div id="cards-container" class="cards"></div>
+  
+      <script id="cards" type="text/x-handlebars-template">
+        <h2 class="title">{{ field_title }}</h2>
+        <div class="items">
+          {{#each items}}
+            <div class="card">
+              <img src="{{ field_card_image }}" alt="{{ field_card_name }}">
+              <h3 class="card__name">{{ field_card_name }}</h3>
+              <p class="card__content">{{ field_card_content }}</p>
+            </div>
+          {{/each}}
         </div>
       </script>
     </div>
 
-    <div class="row">
-      
-    </div>
   </div>
+
   <script type="module" src="./assets/js/bundle.js"></script>
 </body>
 </html>
