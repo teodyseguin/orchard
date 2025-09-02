@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blank Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <div class="main">
-    <div class="row" style="flex-direction: row; gap: 30px;">
-      <div class="col col--left">
+    <div class="row row--first">
+      <div class="col col--70 col--left">
 
         <div id="ds-container" class="ds ds--v1"></div>
 
@@ -46,7 +47,11 @@
       <div id="cards-container" class="cards"></div>
   
       <script id="cards" type="text/x-handlebars-template">
-        <h2 class="title">{{ field_title }}</h2>
+        <div class="header">
+          <div class="wrapper">
+            <h2 class="title">{{ field_title }}</h2>  
+          </div>
+        </div>
         <div class="items">
           {{#each items}}
             <div class="card">

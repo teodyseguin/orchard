@@ -1,21 +1,24 @@
-.title {
-  color: white;
-  flex-grow: 0;
-  font-family: OpenSans;
-  font-size: 30px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: 1.5px;
+.header {
   text-align: center;
-  text-transform: uppercase;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
 }
 
 .items {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 
   .card {
     flex: 1;
@@ -31,7 +34,6 @@
       height: 90px;
       align-self: stretch;
       flex-grow: 0;
-      font-family: OpenSans;
       font-size: 21px;
       font-weight: 300;
       font-stretch: normal;

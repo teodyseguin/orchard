@@ -1,7 +1,6 @@
 h2 {
-  height: 66px;
+  color: white;
   flex-grow: 1;
-  font-family: OpenSans;
   font-size: 30px;
   font-weight: 300;
   font-stretch: normal;
@@ -9,20 +8,45 @@ h2 {
   line-height: 1.1;
   letter-spacing: 1.5px;
   text-align: left;
-  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  border-bottom: solid 1px white;
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
   background-color: #0e1414;
 }
 
 .row {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
   margin: 120px 0;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+.row--first {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .row--first {
+    margin-top: 120px;
+  }
 }
 
 .col {
   flex: 1;
+}
+@media (min-width: 768px) {
+  .col--70 {
+    flex: 3;
+  }
 }
 
 .flex {
@@ -34,6 +58,7 @@ body {
  */
 .ds {
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 @media (min-width: 768px) {
@@ -57,24 +82,28 @@ body {
   object-fit: cover;
 }
 
-.title {
-  color: white;
-  flex-grow: 0;
-  font-family: OpenSans;
-  font-size: 30px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: 1.5px;
+.header {
   text-align: center;
-  text-transform: uppercase;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
 }
 
 .items {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
+}
+@media (min-width: 768px) {
+  .items {
+    flex-direction: row;
+  }
 }
 .items .card {
   flex: 1;
@@ -89,7 +118,6 @@ body {
   height: 90px;
   align-self: stretch;
   flex-grow: 0;
-  font-family: OpenSans;
   font-size: 21px;
   font-weight: 300;
   font-stretch: normal;
@@ -105,22 +133,11 @@ body {
 .tb__title {
   color: white;
   margin: 0;
-  flex-grow: 1;
-  font-family: OpenSans;
-  font-size: 30px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: 1.5px;
-  text-align: left;
-  text-transform: uppercase;
 }
 .tb__content {
   color: white;
   align-self: stretch;
   flex-grow: 0;
-  font-family: OpenSans;
   font-size: 21px;
   font-weight: 300;
   font-stretch: normal;
@@ -132,7 +149,6 @@ body {
 .tb__caption {
   color: #cf1430;
   flex-grow: 0;
-  font-family: OpenSans;
   font-size: 15px;
   font-weight: bold;
   font-stretch: normal;
@@ -144,10 +160,7 @@ body {
 }
 .tb__caption-content {
   color: white;
-  width: 362px;
-  height: 60px;
   flex-grow: 0;
-  font-family: OpenSans;
   font-size: 21px;
   font-weight: bold;
   font-stretch: normal;
@@ -158,8 +171,13 @@ body {
 }
 
 .main {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .main {
+    width: 1440px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

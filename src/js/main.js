@@ -7,8 +7,8 @@ function fetchComponentData() {
     ds: {
       field_images: [
         'assets/images/dynamic_stack/variant_1/left.webp',
-        'assets/images/dynamic_stack/variant_1/right-bottom.webp',
-        'assets/images/dynamic_stack/variant_1/right-top.webp'
+        'assets/images/dynamic_stack/variant_1/right-top.webp',
+        'assets/images/dynamic_stack/variant_1/right-bottom.webp'
       ]
     },
     tb: {
